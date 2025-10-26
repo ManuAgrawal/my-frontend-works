@@ -1,0 +1,182 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;  
+}   
+#left{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    /* animation-name: move;
+    animation-duration: 3s; */
+    /* background-color: yellow; */
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    animation-name: mc;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+#nav h3{
+    font-family: montsarrat;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#left img{
+    animation-name: ab;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+}
+#left>h1{
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    color: black;
+    font-size: 80px;
+    text-align: right;
+    line-height: 70px;
+    animation-name: bc;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+#overlay{
+    animation-name: bc;
+    animation-duration: 2s;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(240, 60, 60);
+}
+#right{
+    animation-name: move;
+    animation-duration: 2s;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    background-color:white;
+}
+
+#right #img1{
+    /* animation-name: move;
+    animation-duration: 2s; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 210px;
+    width: 160px;
+    object-fit: cover;
+}
+
+#right #img2{
+    /* animation-name: move;
+    animation-duration: 2s; */
+    position: absolute;
+    left: 40px;
+    top: 40%;
+    height: 250px;
+    width: 180px;
+    object-fit: cover;
+}
+
+#right #img3{
+    /* animation-name: move;
+    animation-duration: 2s; */
+    /* animation-fill-mode: backwards; */
+    position: absolute;
+    right: 30%;
+    bottom: 1%;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+}
+
+#right h2{
+    position: absolute;
+    right: -15%;
+    top: 30%;
+    transform: rotate(-90deg);
+    font-size: 45px;
+    font-family: gilroy;
+}
+
+
+@keyframes move {
+    0%{
+        right: -30%;
+        opacity: 0;
+    }
+    100%{
+        right: 0%;
+        opacity: 1;
+    }
+    
+}
+
+@keyframes ab {
+    0%{
+        transform: rotate(20deg);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0);
+    }
+    
+}
+
+@keyframes bc {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes mc {
+    0%{
+        top: -10%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
+    }
+    
+}

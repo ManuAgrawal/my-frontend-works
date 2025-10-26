@@ -1,0 +1,464 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1680157071110-d7f5b00708f6?q=80&w=382&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:center;
+}
+
+#nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0% 70px;
+    justify-content:space-between;
+    width: 100%;
+    height: 80px;
+    
+}
+
+#nlinks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 12px;
+    display: flex;
+    gap: 20px;
+}
+
+#nlinks a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#nlinks #active::before{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+#nav h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    color: black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#nav i{
+    padding-top: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+#maintext{
+    color: white;
+    text-align: start;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    height: 60%;
+    width: 40%;
+    /* background-color: red; */
+}
+
+#maintext h4{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Gilroy";
+}
+
+#maintext h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+#maintext2{
+    
+    font-family: "Montsarrat";
+    font-weight: 400;
+    display: flex;
+    gap: 3%;
+}
+
+#left{
+    margin-top: 16px;
+    height: 30px;
+    width: 35%;
+    /* background-color: yellow; */
+}
+
+#left h5{
+    font-size: 8px;
+}
+
+#right{
+    top: 0%;
+    margin-top: 16px;
+    height: auto;
+    width: 65%;
+    /* background-color: aqua; */
+}
+
+#right p{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+#bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 22%;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+}
+
+#cube{
+    color: white;
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+}
+
+#cube i{
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+#text1 h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+}
+
+#text1 p{
+    font-family: "Montsarrat";
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .5;
+   
+}
+
+#text2 h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+
+}
+
+#text2 p{
+    font-family: "Montsarrat";
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .5;
+   
+}
+
+#text3 h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+
+}
+
+#text3 p{
+    font-family: "Montsarrat";
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .5;
+   
+}
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+    #main {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size:cover;
+
+}
+
+    #nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0% 39px;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+}
+
+#nlinks {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    display: flex;
+    gap: 20px;
+}
+
+#maintext {
+    color: white;
+    text-align: start;
+    position: absolute;
+    left: 18%;
+    top: 19%;
+    height: 41%;
+    width: 45%;
+    /* background-color: red; */
+}
+
+#maintext h4 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Gilroy";
+}
+
+#maintext h1 {
+    font-size: 113px;
+    margin-top: 20px;
+    font-weight: 1000;
+}
+
+#maintext2{
+    width: 119%;
+    font-family: "Montsarrat";
+    font-weight: 400;
+    display: flex;
+    gap: 1%;
+}
+
+#left{
+    margin-top: 16px;
+    height: 46px;
+    width: 42%;
+    /* background-color: yellow; */
+}
+
+#left h5{
+    font-size: 8px;
+}
+
+#right{
+    top: 0%;
+    margin-top: 16px;
+    height: auto;
+    width: 68%;
+    /* background-color: aqua; */
+}
+
+#right p{
+    font-size: 15px;
+    font-weight: 400;
+    height: 50%;
+    width: 121%;
+
+}
+
+#bottom {
+        padding-left: 21px;
+        height: 17%;
+        width: 85%;
+        background-color: white;
+        bottom: 0%;
+        gap: 5%;
+    }
+
+ #text1 h3 {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+}
+
+#text1 p {
+    font-family: "Montsarrat";
+    font-size: 17px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+#text2 h3 {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+}
+
+#text2 p {
+    font-family: "Montsarrat";
+    font-size: 17px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+#text3 h3 {
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Montsarrat";
+}
+
+#text3 p {
+    font-family: "Montsarrat";
+    font-size: 17px;
+    font-weight: 400;
+    opacity: .8;
+}
+
+}
+
+
+
+@media(max-width: 600px){
+    #main{
+        height: 100vh;
+        width: 100%;
+    }
+
+    #nav{
+        width: 100%;
+        height: 56px;
+        padding: 0% 13px;
+
+    }
+
+    #nlinks {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 11px;
+        display: flex;
+        gap: 10px;
+    }
+
+    #maintext{
+        left: 16%;
+        top: 28%;
+        color: black;
+    }
+
+    
+
+    #maintext h4 {
+        font-size: 26px;
+        font-weight: 500;
+        font-family: "Gilroy";
+    }
+
+        #maintext h1 {
+        font-size: 41px;
+        margin-top: 20px;
+        font-weight: 1000;
+    }
+
+        #maintext2 {
+        width: 154%;
+        gap: 2%;
+        }
+
+        #left{
+            width: 60%;
+        }
+
+            #left h5 {
+        font-size: 5px;
+    }
+
+        #right p {
+        font-size: 7px;
+        font-weight: 500;
+        }
+
+        #cube{
+        right: -30px;
+        top: -30px;
+        height: 30px;
+        width: 30px;
+        }
+
+        #cube i{
+            font-size: 21px;
+        }
+
+            #text1 h3 {
+        font-size: 15px;
+        }
+        #text1 p {
+        font-size: 13px;
+        }
+
+          #text2 h3 {
+        font-size: 15px;
+        }
+
+        #text2 p {
+        font-size: 13px;
+        }
+        
+          #text3 h3 {
+        font-size: 15px;
+        }
+        #text3 p {
+        font-size: 13px;
+        }
+        
+        
+}
+
+
+
+
+/* clip-path: polygon(0 0,60% 0%, 40% 100%, 0% 100%); */
+
+
+

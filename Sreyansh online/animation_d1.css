@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    animation-name: move;
+    animation-duration: 5s;
+    /* animation-fill-mode: forwards; */
+    /* animation-delay: 2s; */
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+}
+
+@keyframes move{
+    /* from{
+        width: 200px;
+    }
+    to{
+        width: 900px;
+    } */
+
+    0%{
+        left: 0%;
+        top: 0%;
+        width: 200px;
+        background-color: blue;
+        
+    }
+
+    30%{
+        top: 0%;
+        left: 50%;
+        width: 200px;
+        background-color: red;
+    }
+
+    60%{
+        top: 50%;
+        left: 50%;
+        width: 200px;
+        background-color: green;
+    }
+
+    80%{
+        top: 50%;
+        left: 0%;
+        width: 200px;
+        background-color: yellow;
+    }
+
+    100%{
+        top: 0%;
+        left: 0%;
+        width: 200px;
+        background-color: blue;
+    }
+} 
+    
