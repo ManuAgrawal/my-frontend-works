@@ -13,9 +13,9 @@ arr.forEach(function(ele, index){
                 <img src="${ele.img}" alt="">
             </div>
             <h3>${ele.name}</h3>
-            <h5>${ele.status}</h5>
+            <h5 id="${ele.status}">${ele.status}</h5>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, aspernatur.</p>
-            <button id="${index}">Add Friend</button>
+            <button class ="${ele.status==="Stranger" ? "blue" : "red"}" id="${index}">${ele.status === "Stranger" ? "Add Friend" : "Remove Friend"}</button>
         </div>`;
 });
 document.querySelector("#main").innerHTML=clustter;

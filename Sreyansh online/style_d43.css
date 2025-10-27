@@ -49,9 +49,19 @@ html, body{
     object-fit: cover;
     object-position: center;
 }
-#card h2{
+#card h3{
     font-size: 20px;
     font-weight: 600;
+}
+#card #Stranger{
+    font-size: 16px;
+    font-weight: 700;
+    color:red;
+}
+#card #Friend{
+    font-size: 16px;
+    font-weight: 700;
+    color:green;
 }
 #card p{
     font-size: 14px;
@@ -61,8 +71,14 @@ html, body{
     height: 30px;
     width: 100px;
     border: none;
-    background-color: blue;
+    
     color: white;
     border-radius: 5px;
     cursor: pointer;
+}
+#card button.blue{
+    background-color: blue;
+}
+#card button.red{
+    background-color: red;
 }
