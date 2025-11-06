@@ -14,7 +14,24 @@ arr.forEach(function(ele,index){
 
 document.querySelector("#storiya").innerHTML=clutter;
 
+var grow=0;
 document.querySelector("#storiya").addEventListener("click", function(detail){
     document.querySelector("#full-screen").style.display="block";
     document.querySelector("#full-screen ").style.backgroundImage=`url(${arr[detail.target.id].img})`;
+    
+    setTimeout(function(){
+        document.querySelector("#full-screen").style.display="none";
+    },3000);
+
+    if(grow<100){
+        setInterval(function(){
+            document.querySelector("#growth").style.width=`${grow}%`;
+            grow++;
+        },30)
+    }else{
+        grow=0;
+    }
+    
+
+
 });
