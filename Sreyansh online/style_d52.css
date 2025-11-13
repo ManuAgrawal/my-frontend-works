@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    color: #dadada;
+}
+body{
+    background-color: #222;
+    overflow-x: hidden;
+}
+#main{
+    background-color: #222;
+    position: relative;
+}
+#fullscreen-nav{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    position: absolute;
+    top:-100vh;
+    color: #222;
+    transition: all 0.6s ease ;
+    padding: 130px 130px;
+    z-index: 999;
+}
+#fullscreen-nav h1{
+    font-size: 200px;
+    color: #222;
+    transition: all 0.5s ease ;
+    
+}
+#nav{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: absolute;
+    z-index: 999;
+    
+}
+#nav h2{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease ;
+    
+} 
+#nav-part2 i{
+    margin-left: 40px;
+    font-size: 22px;
+    cursor: pointer;
+}
+#page1{
+    min-height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+#page1 h1{
+    text-transform: uppercase;
+    font-size: 13vw;
+    position: absolute;
+    top: 23%;
+    left: 6%;
+    letter-spacing: 8px;
+}
+#page1 h2{
+    font-size: 3.2vw;
+    position: absolute;
+    top: 55%;
+    left: 31%;
+    width: 28%;
+    /* line-height: 1.8vw; */
+}
+#page1 h3{
+    position: absolute;
+    top: 58%;
+    left: 70%;
+    font-size: 1.4vw;
+    width: 13%;
+}
+#page2{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#page2 img{
+    padding: 0 70px;
+    height: 800px;
+    width: 100%;
+    padding-bottom: 15vh;
+}
+#page2 h1{
+    position: absolute;
+    font-size: 2.5vw;
+    width: 40%;
+    left: 28%;
+}
+#page2 h1 span{
+    font-family:"gilroy";
+    font-size: 2.3vw;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page4{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    padding: 50px 120px;
+    /* background-color: red; */
+}
+#page4 h1{
+    font-size: 7vw;
+}
+#page5{
+    position: relative;
+    height: 130vh;
+    width: 100vw;
+    /* background-color: red; */
+}
+#page5-elems{
+    /* background-color: blue; */
+    height: 22vh;
+    display: flex;
+    justify-content: space-between; 
+    /* align-items: center;   */
+}
+
+#page5-elem1 h1{
+    padding: 10px 80px;
+    width: 63vw;
+    height: 22vh;
+    font-size: 50px;
+    border: 1px solid #d1d1d1;
+    /* background-color: yellow; */
+}
+#page5-elem2 h2{
+    padding: 18px 80px;
+    font-size: 27px;
+    width: 63vw;
+    height: 22vh;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    /* background-color: green; */
+}
+

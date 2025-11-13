@@ -14,7 +14,7 @@ gsap.from("#page2 #box",{
         trigger:"#page2 #box",
         scroller:"body",
         markers:true,
-        start:"top 50%",
+        start:"top 70%",
         end:"top 20%",   
         // scrub:true,
         // pin:true
