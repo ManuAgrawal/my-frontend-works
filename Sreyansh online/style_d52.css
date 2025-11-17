@@ -23,7 +23,7 @@ body{
     position: absolute;
     top:-100vh;
     color: #222;
-    transition: all 0.6s ease ;
+    transition: all 0.9s ease ;
     padding: 130px 130px;
     z-index: 999;
 }
@@ -105,7 +105,7 @@ body{
     left: 28%;
 }
 #page2 h1 span{
-    font-family:"gilroy";
+    font-family:'Dancing Script';
     font-size: 2.3vw;
 }
 #page3{
@@ -125,7 +125,7 @@ body{
 }
 #page5{
     position: relative;
-    height: 130vh;
+    height: 110vh;
     width: 100vw;
     /* background-color: red; */
 }
@@ -154,4 +154,143 @@ body{
     border-bottom: 1px solid #d1d1d1;
     /* background-color: green; */
 }
+#page5-content{
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1611107875582-684c70574042?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    
+    /* background-color: red; */
+    padding-top: 70px;
+}
+#page5-content h1{
+    font-size: 4.6vw;
+    font-family: "montsarrat";
+    text-align: center;
+    line-height: 4.8vw;
+}
+#page5-content span{
+    font-family:'Dancing Script';
+}
+#page5-content h4{
+    font-size: 1.2vw;
+    width: 30%;
+    /* background-color: red; */
+    margin-top: 12px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#page5-content i{
+    font-size: 2vw;
+}
+#page6 .slide1-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 .slide1-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+
+#page6 .slide2-of-h1{
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: default;
+}
+#page6 .slide2-of-h1::-webkit-scrollbar{
+    display: none;
+}
+
+#page6 .slide2-of-h1 h1{
+    transform: translateX(-200%);
+}
+#page6 h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+    line-height: 21vh;
+}
+#page6 h1 .one2{
+    color: transparent;
+    -webkit-text-stroke: 2px #adadad;
+}
+#page7{
+    height:100vh;
+    width: 100vw;
+    background-color: #222;
+    text-align: center;
+    padding: 80px 50px;
+}
+#page7 h3{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3.9vw;
+    /* background-color: blue; */
+    width: 50%;
+}
+#page7 h3 span{
+    font-family: 'Dancing script';
+    font-size: 4.5vw;
+}
+#page7-elem{
+    /* background-color: red; */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-around;
+
+}
+#page7-elem #element1{
+    height: 100%;
+    /* background-color: blue; */
+    width: 23%;
+    display: flex;
+    align-items: center;
+    /* cursor: none; */
+    justify-content: center;
+}
+#page7-elem #element2{
+    height: 100%;
+    /* background-color: blue; */
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page7-elem #element1 h1{
+    font-size: 60px;
+    z-index: 99;
+    position: relative;
+}
+#page7-elem #element2 h1{
+    font-size: 60px;
+    z-index: 99;
+    position: relative;
+}
+#page7-elem #element1 img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: opacity ease-in 0.2s;
+}
+#page7-elem #element2 img{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    opacity: 0;
+    transform: rotate(10deg);
+    transition: opacity ease-in 0.2s;
+}
+
+
+
 

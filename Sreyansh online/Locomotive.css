@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: salmon;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(78, 230, 146);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
+#page3{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(226, 62, 199);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+}
