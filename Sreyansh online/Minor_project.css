@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+}
+#Home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#Home img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    height: 60vw;
+    width: 60vw;
+    background-color:transparent;
+}
+#circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+#top{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+}
+#top img{
+    transform: translate(-50%,-50%) rotate(-180deg);
+}
+
+
+#btm{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+}
+
+#btm img:nth-child(1){
+    transform: translate(-50%,-50%) scale(2);
+}
+#btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(1.5);
+}
+#btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(1);
+}
+#top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(2);
+}
+#top img:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1.5);
+}
+#top img:nth-child(3){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(1);
+} 
+
+#overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100vh;
+    width: 100%;
+}
+#smcircle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    height: 40vw;
+    width: 40vw;
+    background-color: white;
+}
+#nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 30px 50px;
+}
+#btmnav{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 30px 50px;
+}
+#nav img{
+    width: 120px;
+}
+#btmnav img{
+    width: 100px;
+}
+#nav h1{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+#centerimg{
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#centerimg h5{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+#centerimg #cimage{
+    position: relative;
+    width: 30vw;
+    /* background-color: red; */
+    height: 260px;
+}
+#cimage img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
